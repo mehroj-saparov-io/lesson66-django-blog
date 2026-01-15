@@ -48,9 +48,9 @@
     "id": "h8i9j0k1",
     "title": "Slug nima va SEO",
     "slug": "slug-nima-va-seo-h8i9j0k1",
-    "content": "Slug — URL ichida ishlatiladigan o‘qilishi oson matn hisoblanadi. U SEO uchun juda muhim. Slug foydalanuvchi va qidiruv tizimlari uchun sahifa mazmunini tushunishga yordam beradi.",
-    "is_published": false,
+    "content": "Slug  - bu URL ichida ishlatiladigan o‘qilishi oson matn hisoblanadi. U SEO uchun juda muhim. Slug foydalanuvchi va qidiruv tizimlari uchun sahifa mazmunini tushunishga yordam beradi.",
+    "is_published": true,
     "created_at": "2026-01-15 11:20",
-    "updated_at": "2026-01-15 11:20"
+    "updated_at": "2026-01-16 01:21"
   }
 ]
