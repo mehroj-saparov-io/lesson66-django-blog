@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PostWeb</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo">
+            <a href="{% url 'home' %}">PostWeb</a>
+        </div>
+
+        <nav class="nav">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'posts' %}">Posts</a>
+            <a href="{% url 'post_create' %}" class="btn">Create</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© {{ now|date:"Y" }} PostWeb. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

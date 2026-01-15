@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a1b2c3d4",
+    "title": "Django nima va nima uchun kerak",
+    "slug": "django-nima-va-nima-uchun-kerak-a1b2c3d4",
+    "content": "Django — bu Python dasturlash tilida yozilgan kuchli web framework hisoblanadi. U tezkor ishlab chiqish, xavfsizlik va kengaytirish imkoniyatlari bilan mashhur. Django yordamida autentifikatsiya, admin panel, URL routing va ORM kabi ko‘plab funksiyalarni tayyor holatda olish mumkin. Shu sababli u startaplar va yirik loyihalarda keng qo‘llaniladi.",
+    "is_published": true,
+    "created_at": "2026-01-15 09:00",
+    "updated_at": "2026-01-15 09:00"
+  },
+  {
+    "id": "b2c3d4e5",
+    "title": "Django loyihasini yaratish",
+    "slug": "django-loyihasini-yaratish-b2c3d4e5",
+    "content": "Django loyihasini yaratish uchun avvalo virtual environment yaratish tavsiya etiladi. So‘ng `django-admin startproject` buyrug‘i orqali loyiha boshlanadi. Loyihaning ichida settings, urls va wsgi fayllari mavjud bo‘ladi. To‘g‘ri strukturani tushunish keyingi bosqichlar uchun juda muhim.",
+    "is_published": true,
+    "created_at": "2026-01-15 09:20",
+    "updated_at": "2026-01-15 09:20"
+  },
+  {
+    "id": "c3d4e5f6",
+    "title": "Django app tushunchasi",
+    "slug": "django-app-tushunchasi-c3d4e5f6",
+    "content": "Django’da app — bu loyihaning ma’lum bir funksional qismi hisoblanadi. Masalan: blog, users yoki products alohida app bo‘lishi mumkin. App’lar qayta ishlatiladigan bo‘lishi uchun mustaqil yaratiladi. `python manage.py startapp` buyrug‘i orqali app ochiladi.",
+    "is_published": true,
+    "created_at": "2026-01-15 09:40",
+    "updated_at": "2026-01-15 09:40"
+  },
+  {
+    "id": "d4e5f6g7",
+    "title": "Django URL routing",
+    "slug": "django-url-routing-d4e5f6g7",
+    "content": "URL routing foydalanuvchi so‘rovlarini kerakli view’ga yo‘naltirish uchun ishlatiladi. Django’da bu urls.py fayli orqali amalga oshiriladi. Path va re_path funksiyalari yordamida URL lar aniqlanadi. To‘g‘ri routing sayt strukturasini tushunarli qiladi.",
+    "is_published": true,
+    "created_at": "2026-01-15 10:00",
+    "updated_at": "2026-01-15 10:00"
+  },
+  {
+    "id": "e5f6g7h8",
+    "title": "Django Views qanday ishlaydi",
+    "slug": "django-views-qanday-ishlaydi-e5f6g7h8",
+    "content": "View — bu foydalanuvchi so‘roviga javob qaytaruvchi funksiya yoki class hisoblanadi. Django’da function-based va class-based view’lar mavjud. Class-based view’lar ko‘proq tartibli va qayta ishlatishga qulay bo‘ladi.",
+    "is_published": true,
+    "created_at": "2026-01-15 10:20",
+    "updated_at": "2026-01-15 10:20"
+  },
+  {
+    "id": "g7h8i9j0",
+    "title": "Django Forms asoslari",
+    "slug": "django-forms-asoslari-g7h8i9j0",
+    "content": "Django Forms foydalanuvchi ma’lumotlarini qabul qilish va tekshirish uchun ishlatiladi. forms.Form va forms.ModelForm turlari mavjud. Formlar validatsiya, xatoliklarni ko‘rsatish va ma’lumotni tozalashni avtomatik bajaradi.",
+    "is_published": true,
+    "created_at": "2026-01-15 11:00",
+    "updated_at": "2026-01-15 11:00"
+  },
+  {
+    "id": "h8i9j0k1",
+    "title": "Slug nima va SEO",
+    "slug": "slug-nima-va-seo-h8i9j0k1",
+    "content": "Slug — URL ichida ishlatiladigan o‘qilishi oson matn hisoblanadi. U SEO uchun juda muhim. Slug foydalanuvchi va qidiruv tizimlari uchun sahifa mazmunini tushunishga yordam beradi.",
+    "is_published": false,
+    "created_at": "2026-01-15 11:20",
+    "updated_at": "2026-01-15 11:20"
+  },
+  {
+    "id": "j0k1l2m3",
+    "title": "Django loyihani deploy qilish",
+    "slug": "django-loyihani-deploy-qilish-j0k1l2m3",
+    "content": "Deploy - bu loyihani serverga joylash jarayoni. Django loyihalar odatda Gunicorn, Nginx va PostgreSQL bilan deploy qilinadi. DEBUG ni o‘chirish va xavfsizlik sozlamalarini to‘g‘ri qilish juda muhim.",
+    "is_published": true,
+    "created_at": "2026-01-15 12:00",
+    "updated_at": "2026-01-16 00:27"
+  }
+]

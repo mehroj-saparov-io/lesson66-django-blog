@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <h1>PostWeb</h1>
+    <p>Simple blog built with Django & Forms</p>
+    <a href="{% url 'posts' %}" class="btn-primary">View all posts</a>
+</section>
+
+<section class="latest-posts">
+    <h2>Latest posts</h2>
+
+    {% if latest_posts %}
+        {% for post in latest_posts %}
+            <div class="post-card">
+                <h2>{{ post.title }}</h2>
+
+                <p>
+                    {{ post.content|truncatechars:120 }}
+                </p>
+
+                <a href="{% url 'post_detail' slug=post.slug %}" style="color: #007bff;">
+                    <u>Read more →</u>
+                </a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No posts yet.</p>
+    {% endif %}
+
+</section>
+
+{% endblock %}

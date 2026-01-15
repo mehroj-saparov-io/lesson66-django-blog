@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="{% url 'posts' %}" class="back-link">← Back to posts</a>
+
+<article class="post-detail">
+    <h1>{{ post.title }}</h1>
+    <div class="post-meta">
+        <span>📅 Created: {{ post.created_at }}</span>
+
+        {% if post.updated_at != post.created_at %}
+            <span class="edited">
+                ✏️ Last edited: {{ post.updated_at }}
+            </span>
+        {% endif %}
+    </div>
+
+
+    <div class="post-meta">
+        <span>{{ post.created_at }}</span>
+
+        {% if not post.is_published %}
+            <span class="badge">Draft</span>
+        {% endif %}
+    </div>
+
+    <div class="post-content">
+        {{ post.content|linebreaks }}
+    </div>
+
+    <div class="post-actions">
+        <a href="{% url 'post_update' slug=post.slug %}" class="btn-secondary">
+            Edit
+        </a>
+
+        <form method="post"
+              action="{% url 'post_delete' slug=post.slug %}"
+              class="inline-form">
+            {% csrf_token %}
+            <button type="submit" class="btn-danger">
+                Delete
+            </button>
+        </form>
+    </div>
+</article>
+
+{% endblock %}
