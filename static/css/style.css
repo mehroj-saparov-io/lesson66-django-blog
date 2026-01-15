@@ -418,3 +418,52 @@ main {
 .delete-form {
     margin: 0;
 }
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* DELETE kichkina bo‘lib qolmasligi uchun */
+.actions form {
+    display: inline-flex;
+    margin: 0;
+}
+
+.actions a,
+.actions button {
+    min-width: 90px;   /* <<< HAMMASI BIR XIL BO‘LADI */
+    padding: 8px 14px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* =========================
+   SUCCESS PAGES (created / updated)
+========================= */
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.success-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 180px;
+    padding: 12px 22px;
+
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+
+    text-decoration: none;
+}
